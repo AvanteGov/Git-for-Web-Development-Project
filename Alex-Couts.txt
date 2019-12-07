@@ -1,0 +1,155 @@
+1. What is the difference between an inline element and a block element?
+    
+    A: Block elements are displayed on the webpage as requiring the entire width of
+    the page (or are divded into rows and columns). While inline elements do not require the 
+    entire width of the page, simply the amount of space they are told to occupy. 
+
+2. What happens when an element is positioned absolutely? 
+    
+    A:  When an element is positioned absolutely, the element will remain in the same position relative
+    to the parent it is associated with, rather than moving in relation to itself. 
+
+3. How do I make an element take up only the amount of space it needs but also have the ability 
+to give it a width? 
+    
+    A: using <div> to fill empty space. 
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+   
+    A: 
+    Block: <p>, <section>, <h1> 
+    In-line: <b>, <a>, <i>
+
+5. In your own words, explain the box model. What is the fix for the box model? 
+   
+    A: The box model is a visual breakdown of the rows and columns that comprise the layout of 
+    a webpage including padding, margins, etc. The solution to the 100px issue associated with the 
+    box model is the CSS code: 
+     
+                * { 
+                    box-sizing: border-box;
+                }
+    which globally effects all future elements to automatically add up 100px ^2 to match the
+    CSS requirment. 
+
+ 1. What is Semantic HTML? 
+	-  Code that provides definition and meaning to content and data on a webpage. 
+
+    2. What is HTML used for? 
+	- to tell the browser how to interpret the data and content. 
+
+    3. What is an attribute and where do we put it? 
+	- an attribute is data within an HTML element that describes the behavior of the element. It is placed after the tag. 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	- It is used for the main header of the page, it should (usually) be used once, but can be used more than once per certain styles. 
+
+    5. Name two tags that have required attributes
+	<a> , <img> 
+
+    6. What do we put in the head of our HTML document? 
+	- HTML metadata about the document for the browser to read and react accordingly.
+	
+    7. What is an id? 
+	- a UNQIUE identifier.
+
+    8. What elements can I add an id to? 
+	- any HTML element can have an ID, but it must be unique.
+
+    9. How many times can I use the same id on a page? 
+	- you cannot use the same ID more than once. 
+
+    10. What is a class? 
+	- a NON-UNIQUE identifier of an element. 
+
+    11. What elements can I add a class to? 
+	- you can add a class to any element.
+
+    12. How many times can I use the same class on a page? 
+	- as many times as needed per the style. 
+
+    13. How do I get my link to open in a new tab?
+	- by adding target="_blank" as an attribute to the tag.
+
+    14. What is the alt attribute used for? 
+	- for screenreader recognition, or as a display default if the src is unable to load. 
+
+    15. How do I reference an id?
+	- by using # in the CSS style sheet. In JS, document.getElementByID().
+
+    16. What is the difference between a section and a div
+	- <div> does not provide meaning to the HTML document, while <section> conveys that they child items underneath are grouped together. 
+
+    17. What is CSS used for? 
+	- Cascading style sheet. 
+
+    18. How to we select an element? Example - every h2 on the page
+	h2 { property: change; } in CSS document. 
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	- class can be used multiple times, as if formatting multiple sections of the site similarly, or elements under a section similarly. ID is unique, and will only effect the single element with that ID, such as formatting a specific link differently than the rest of a group of links. 
+
+    20. How do we select classes in CSS?
+	.class { property:  change; } 
+
+    21. How do we select a p element with a single class of “human””?
+	p .human { property: change; } 
+
+    22. What is a parent child selector? When would this be useful? 
+	- this selector allows for devs to select children that are the parent of xElement, would be useful for styling all children of specific elements of a page. 
+
+    23. How do you select all links within a div with the class of sidebar?
+	div > a .sidebar { property: change; } 
+
+    24. What is a pseudo selector?
+	- a keyword added to a selector that causes behavior and modification when the element is under a certain condition or status. 
+
+    25. What do we use the change the spacing between lines?
+	- line-height: 
+
+    26. What do we use to change the spacing between letters?
+	- letter-spacing: 
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	- text-transform: uppercase, lowercase, capitalize
+
+    28. How do I add a 1px border around my div that is dotted and black?
+	div { 
+		border: 1px;
+		border-style: dotted;
+	}
+
+    29. How do I select everything on the page? 
+	- universal selector (*)
+
+    30. How do I write a comment in CSS?
+	- /* this is my comment */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+	- by looking at the path next to the type head in the CLI. 
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	- ls command
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	- rm -fileName // there will be no warning before deletion, and no “purgatory” for the file to be retrieved from before deletion. It is GONE. 
+
+    34. Why should I use version control? 
+	- to proxy all code changes before they are merged to the master code base, and to be able to recall past versions.
+
+    35. How often should I commit to github?
+	- as often as substantial changes are made.
+
+    36. What is the command we would use to push our repo up to github? 
+	- git push -u origin branchName 
+
+    37. Walk me through Lambda's git flow. 
+	- Create own fork 
+		- add PM as collaborator 
+	- clone fork to local machine 
+	- create own branch of forked clone 
+	- modify 
+	- push changes to GitHub 
+	- create pull request 
+		- add PM as reviewer
+
