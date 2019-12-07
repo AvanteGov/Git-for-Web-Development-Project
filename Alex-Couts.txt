@@ -1,3 +1,5 @@
+Code Pen Assignment: https://codepen.io/avantegov/pen/VwYvMrw?editors=1100
+
 1. What is the difference between an inline element and a block element?
     
     A: Block elements are displayed on the webpage as requiring the entire width of
